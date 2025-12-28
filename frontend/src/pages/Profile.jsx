@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import "../styles/profile.css";
-import UserAvatar from "../components/common/UserAvatar";
+import UserAvatar from "../components/common/UserAvatar.jsx";
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 

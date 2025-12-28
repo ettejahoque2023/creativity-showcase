@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import ThemeToggle from "./ThemeToggle";
 import { AuthContext } from "../../context/AuthContext";
 import "../../styles/navbar.css";
-import UserAvatar from "./UserAvatar";
+import UserAvatar from "./UserAvatar.jsx";
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { user, logout } = useContext(AuthContext);
