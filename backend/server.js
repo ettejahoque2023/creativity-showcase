@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",               // local frontend
-      "https://artgalaxy-git-main-etteja-hoques-projects.vercel.app?_vercel_share=kvvQ78cegnV8hyiCb1KVxow5Pwj4iLFq",    // 🔴 CHANGE THIS
+      "https://artgalaxyehq.onrender.com",
     ],
     credentials: true,
   })
