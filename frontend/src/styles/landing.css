@@ -1,0 +1,138 @@
+.landing {
+  padding: 60px 20px;
+}
+
+
+/* HERO */
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h3{
+  font-weight: 200;
+  color:#ff477e;
+}
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+
+
+.hero h1 span {
+  font-weight: 800;
+  color: #ff0a54;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #6b7280;
+  font-size: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn.outline {
+  border: 1px solid #ccc;
+  color: #111;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+  /* 1. Increase size by 20% */
+  transform: scale(1.1);
+  /* 2. Change color (optional) */
+  color: #ff4081; 
+  
+  /* 3. The Glow Effect (Horizontal Offset, Vertical Offset, Blur, Color) */
+  filter: drop-shadow(0 0 8px rgba(255, 10, 84, 0.8));
+}
+.btn.solid {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* FEATURED */
+.featured {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.featured-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.featured-card {
+  height: 160px;
+  background: #e5e7eb;
+  border-radius: 12px;
+}
+
+/* EXPLORE */
+.explore {
+  margin: 70px 0;
+  text-align: center;
+}
+
+/* ===== FEATURED CAROUSEL WRAPPER ===== */
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Reduce width & center */
+.carousel {
+  width: 100%;
+  max-width: 900px;   /* 👈 UI balanced */
+  margin: 2rem auto;
+}
+
+/* Image full visible (NO CROP) */
+.carousel-img {
+  height: 420px;
+  /* object-fit: contain;          
+  background-color: #f3f4f6;    soft background */
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.carousel-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  border-radius: 0 0 14px 14px;
+}
+
+.carousel-overlay h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.carousel-overlay p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}

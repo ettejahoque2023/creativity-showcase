@@ -1,0 +1,61 @@
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* OPEN STATE */
+.sidebar.open {
+  right: 0;
+}
+
+/* LINKS */
+.sidebar a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* LOGOUT */
+.logout-btn {
+  margin-top: auto;
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #1f2937;
+}
+
+/* DARK MODE */
+body.dark .sidebar {
+  background: #020617;
+}
+
+body.dark .sidebar a {
+  color: #e5e7eb;
+}

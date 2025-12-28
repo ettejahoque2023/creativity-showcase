@@ -1,0 +1,71 @@
+.navbar {
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-left i,
+.nav-right i {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #555;    /* Base color */
+  cursor: pointer;
+  
+  /* Essential for smoothness */
+  transition: all 0.3s ease-in-out; 
+  display: inline-block;
+}
+ .navbar i:hover{
+    /* 1. Increase size by 20% */
+  transform: scale(1.2);
+  
+  /* 2. Change color (optional) */
+  color: #ff4081; 
+  
+  /* 3. The Glow Effect (Horizontal Offset, Vertical Offset, Blur, Color) */
+  filter: drop-shadow(0 0 8px rgba(255, 64, 129, 0.8));
+ }
+.nav-center {
+  font-size: 20px;
+  font-weight: 600;
+}
+.brand{
+  text-decoration: none;
+  font-family: "Playwrite CZ", cursive;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight:800px;
+  color: black;
+  /* font-style: normal; */
+}
+
+.brand:hover{
+  /* 2. Change color (optional) */
+  color: #ff4081; 
+  
+  /* 3. The Glow Effect (Horizontal Offset, Vertical Offset, Blur, Color) */
+  filter: drop-shadow(0 0 8px rgba(255, 64, 129, 0.8));
+}
+
+.nav-left{
+  padding-left: 100px;
+}
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.login-btn{
+  color: white;
+  font-size: 15px;
+}
+

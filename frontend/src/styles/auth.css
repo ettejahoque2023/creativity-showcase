@@ -1,0 +1,100 @@
+/* ===== AUTH PAGES COMMON STYLES ===== */
+
+.auth-container {
+  min-height: calc(100vh - 60px); /* navbar height বাদ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-box input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-color: #0f172a;
+}
+
+.auth-box button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #020617;
+}
+
+.auth-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.auth-footer a {
+  color: #0f172a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+body.dark .auth-container {
+  background: #020617;
+}
+
+body.dark .auth-box {
+  background: #020617;
+  border: 1px solid #1e293b;
+}
+
+body.dark .auth-box h2,
+body.dark .auth-footer {
+  color: #e5e7eb;
+}
+
+body.dark .auth-box input {
+  background: #020617;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+body.dark .auth-box button {
+  background: #2563eb;
+}
