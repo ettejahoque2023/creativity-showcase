@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import ThemeToggle from "./ThemeToggle";
 import { AuthContext } from "../../context/AuthContext";
 import "../../styles/navbar.css";
-import UserAvatar from "../common/UserAvatar";
+import UserAvatar from "./UserAvatar";
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { user, logout } = useContext(AuthContext);
@@ -20,7 +20,7 @@ const Navbar = () => {
   const avatarSrc = user?.avatar
     ? user.avatar.startsWith("http")
       ? user.avatar
-      : `http://localhost:5000${user.avatar}`
+      : `${BASE_URL}${user.avatar}`
     : "https://i.pravatar.cc/40";
 
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
           {user ? (
   <div onClick={() => navigate("/profile")}>
     <UserAvatar
-      avatar={user.avatar}
+      avatar={avatarSrc} 
       name={user.name}
       size={40}
     />

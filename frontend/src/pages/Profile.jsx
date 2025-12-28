@@ -40,13 +40,17 @@ const Profile = () => {
 
     fetchMyArtworks();
   }, [user, navigate]);
-
+ const avatarSrc = user?.avatar
+    ? user.avatar.startsWith("http")
+      ? user.avatar
+      : `${BASE_URL}${user.avatar}`
+    : "https://i.pravatar.cc/120";
   return (
     <div className="container profile-container">
       {/* ===== PROFILE HEADER ===== */}
       <div className="profile-header">
         <UserAvatar
-          avatar={user?.avatar}
+          avatar={avatarSrc} 
           name={user?.name}
           size={120}
         />
