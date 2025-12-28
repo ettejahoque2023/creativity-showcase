@@ -13,7 +13,16 @@ import artworkRoutes from "./routes/artworkRoutes.js";
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",               // local frontend
+      "https://artgalaxy-git-main-etteja-hoques-projects.vercel.app?_vercel_share=kvvQ78cegnV8hyiCb1KVxow5Pwj4iLFq",    // 🔴 CHANGE THIS
+    ],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
