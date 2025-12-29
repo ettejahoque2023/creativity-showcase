@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const Upload = () => {
   const { user } = useContext(AuthContext);
