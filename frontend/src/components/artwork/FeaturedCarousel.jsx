@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const FALLBACK_IMAGE =
   "data:image/svg+xml;utf8," +
@@ -25,7 +26,7 @@ const FeaturedCarousel = () => {
   useEffect(() => {
     const fetchArtworks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/artworks");
+        const res = await axios.get(`${BASE_URL}/api/artworks`);
         setArtworks(Array.isArray(res.data) ? res.data : []);
       } catch (err) {
         console.error("Failed to load artworks", err);
