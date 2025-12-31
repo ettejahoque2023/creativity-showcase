@@ -106,13 +106,13 @@ VITE_API_BASE_URL=https://artgalaxy.onrender.com
 
 ## 🔮Future Scope
 
-❤️ Like & favorite artworks
-💬 Comments & discussions
-👥 Follow artists
-🔍 Advanced search & filters
-📊 Analytics dashboard
-📱 Progressive Web App (PWA)
-🧠 AI-based artwork recommendations
-🖼 Image optimization & CDN caching
+- ❤️ Like & favorite artworks
+- 💬 Comments & discussions
+- 👥 Follow artists
+- 🔍 Advanced search & filters
+- 📊 Analytics dashboard
+- 📱 Progressive Web App (PWA)
+- 🧠 AI-based artwork recommendations
+- 🖼 Image optimization & CDN caching
 
 
